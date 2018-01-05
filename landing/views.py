@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def procedure_list(request):
+    return render(request, 'landing/procedure_list.html')

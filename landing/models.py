@@ -7,6 +7,6 @@ class DelyveryInfo(models.Model):
     scope = models.FloatField()
 
 class ProcedureInfo(models.Model):
-    ProcedureName = models.CharField(max_length=200)
-    OurContractInfo = models.CharField(max_length=200)
-    YourContractInfo = models.CharField(max_length=200)
+    procedureName = models.CharField(max_length=200)
+    ourContractInfo = models.CharField(max_length=200)
+    yourContractInfo = models.CharField(max_length=200)
