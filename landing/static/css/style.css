@@ -1,12 +1,12 @@
 a {
 	text-decoration: none;
+	color: black;
 }
-.menu ul, .menu li, .phone_header p, .phone_header a{
+.menu ul, .menu li{
 	margin: 0;
 	padding: 0;
 }
 .menu ul {
-	background: gray;
 	list-style: none;
 	width: 100%;
 }
@@ -15,20 +15,21 @@ a {
 	position: relative;
 	width:auto;
 	display: block;
-	padding: 10px 25px;
+	padding: 3% 2%;
 	text-align: center;
 }
-
+.round_button_phone:hover {
+	margin: 5px auto 3px;
+	box-shadow: 0 0 1px #eee;
+}
 .phone_number{
-	font-weight: bold;
 	float: right;
 	position: relative;
 	width:auto;
 	display: block;
-	padding: 10px 25px;
+	padding: 2%;
 	text-align: center;	
 }
-
 .round_button_phone {
 	font-weight:bold;
 	float: right;
@@ -40,12 +41,8 @@ a {
 	text-align: center;
 	text-decoration: none;
 	padding: 10px;
-	margin: 3px auto 5px;
+	margin: 2% 3%;
 	border: 1px solid #ddd;
 	border-radius: 20px;
 	box-shadow: 0 3px 5px #ccc;
-}
-.round_button_phone:hover {
-	margin: 5px auto 3px;
-	box-shadow: 0 0 1px #eee;
 }
