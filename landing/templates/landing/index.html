@@ -8,6 +8,7 @@
         <header>
             <nav class="menu">
                 <ul>
+                    <li><img src="{% static 'images/logo.png' %}"></li>
                     <li><a href="">Все услуги</a></li>
                     <li><a href="">Почему мы?</a></li>
                     <li><a href="">Контакты</a></li>
@@ -15,9 +16,17 @@
             </nav>
             <nav class="phone_header">
                 <a class="round_button_phone" href="">Заказать обратный звонок</a> 
-                <p class="phone_number"><b>+38 (067) 009-52-52</b></p>
-                <p class="phone_number"><b>+38 (048) 772-41-00</b></p>
-                <p class="phone_number">Звоните:</p>
+                <div class="phone_number">
+                    <img src="{% static 'images/phone-icon.png' %}">
+                    <p><b>+38 (067) 009-52-52</b></p>
+                </div>
+                <div class="phone_number">
+                    <img src="{% static 'images/phone-icon.png' %}">
+                    <p><b>+38 (048) 772-41-00</b></p>
+                </div>
+                <div class="phone_number">
+                    <p>Звоните:</p>
+                </div>
             </nav>
         </header>
 
@@ -33,52 +42,68 @@
 
         <div class="boxes_block">
             <div class="box">
-                <img style="display: inline-block; position: relative; float: left; margin: 5%;" src="{% static 'images/wallet.png' %}">
-                <p><b>Отличная цена</b></p>
-                <p>Всего от 380 у.е. за куб</p>
-                <a class="round_button_order" href="">Заказать</a> 
+                <img src="{% static 'images/wallet.png' %}">
+                <div class="box_text">
+                    <p><b>Отличная цена</b></p>
+                    <p>Всего от 380 у.е. за куб</p>
+                    <a class="round_button_order" href="">Заказать</a> 
+                </div>
             </div>
 
-            <div class="box">
+            <div class="box left">
                 <img src="{% static 'images/file.png' %}">
-                <p><b>Услуги без посредников</b></p>
-                <p>Компания является экспедитором и таможенным брокером, имея договора со всеми судоходными линиями</p>
+                <div class="box_text">
+                    <p><b>Услуги без посредников</b></p>
+                    <p>Компания является экспедитором и таможенным брокером, имея договора со всеми судоходными линиями</p>
+                </div>
             </div>
             
             <div class="box">
                 <img src="{% static 'images/box.png' %}">
-                <p><b>Удобный объем поставки</b></p>
-                <p>От 0,2 до 20 м3  (если больше - лучше целым контейнером)</p>
+                <div class="box_text">
+                    <p><b>Удобный объем поставки</b></p>
+                    <p>От 0,2 до 20 м3  (если больше - лучше целым контейнером)</p>
+                </div>
             </div>
             
-            <div class="box">
+            <div class="box left">
                 <img src="{% static 'images/money.png' %}">
-                <p><b>Гарантия фиксированной цены</b></p>
-                <p>Цена точно не поменяется в процессе</p>
+                <div class="box_text">
+                    <p><b>Гарантия фиксированной цены</b></p>
+                    <p>Цена точно не поменяется в процессе</p>
+                </div>
             </div>
             
             <div class="box">
                 <img src="{% static 'images/money-bag.png' %}">
-                <p><b>Экономия на доставке по Китаю</b></p>
-                <p>Благодаря нашим складам в Гунчжоу и Шанхае </p>
+                <div class="box_text">
+                    <p><b>Экономия на доставке по Китаю</b></p>
+                    <p>Благодаря нашим складам в Гунчжоу и Шанхае </p>
+                </div>
             </div>
             
-            <div class="box">
+            <div class="box left">
                 <img src="{% static 'images/solar-system.png' %}">
-                <p><b>Отлаженная и надежная система работы</b></p>
-                <p>За счет большого опыта</p>
+                <div class="box_text">
+                    <p><b>Отлаженная и надежная система работы</b></p>
+                    <p>За счет большого опыта</p>
+                </div>
             </div>
             
             <div class="box">
                 <img src="{% static 'images/cranes.png' %}">
-                <p><b>Формирование отдельных партий в разные города Украины</b></p>
-                <p>Осуществляется на нашем складе в Одессе</p>
+                <div class="box_text">
+                    <p><b>Формирование отдельных партий в разные города Украины</b></p>
+                    <p>Осуществляется на нашем складе в Одессе</p>
+                </div>
             </div>
             
-            <div class="box">
+            <div class="box left">
                 <img src="{% static 'images/hourglass.png' %}">
-                <p><b>Сроки 35-60 дней</b></p>
-                <p>Стабильная доставка морем</p>
+                <div class="box_text">
+                    <p><b>Сроки 35-60 дней</b></p>
+                    <p>Стабильная доставка морем</p>
+                </div>
             </div>
         </div>
         
@@ -86,19 +111,45 @@
             <a class="round_button_order" href="">Узнать подробности</a>
         </div>
         
-        <div>
+        <div class="phone_line" style="background-image:url({% static 'images/backgound-block3.png' %}); ">
             <p>Звоните:</p>
-            <p>+38 (067) 009-52-52</p>
-            <a class="round_button_phone" href="">Заказать обратный звонок</a>
+            <img src="{% static 'images/phone-icon-white.png' %}">
+            <p><b>+38 (048) 772-41-00</b></p>
+            <img src="{% static 'images/phone-icon-white.png' %}">
+            <p><b>+38 (067) 009-52-52</b></p>
+            <a class="round_button_phone" style="background: #fff; float: none; position: none; display: inline-block;" href="">Заказать обратный звонок</a>
         </div>
-        
-        <p>Мы рады Вам представить качественный консьерж-сервис и заботу</p>
-        <p>Всегда на связи</p>
-        <p>Отправка любой транспортной компанией по Украине</p>
-        <p>Разные формы оплаты</p>
-        <p>Услуга “Заплатить за товар из Украины в Китай”</p>
-        <p>Варианты страхования на выбор</p>
 
+        <div class="question_footer">
+            <p>Мы рады Вам представить качественный<br/>консьерж-сервис и заботу</p>
+        </div>
+        <div class="service">
+             <div class="service_pic">
+                <img src="{% static 'images/support.png' %}">
+                <p>Всегда на связи</p>
+            </div>
+
+            <div class="service_pic">
+                <img src="{% static 'images/trunck.png' %}">
+                <p>Отправка любой транспортной компанией по Украине</p>
+            </div>
+            
+            <div class="service_pic">
+                <img src="{% static 'images/credit-card.png' %}">
+                <p>Разные формы оплаты</p>
+            </div>
+
+            <div class="service_pic">
+                <img src="{% static 'images/invoice.png' %}">
+                <p>Услуга “Заплатить за товар из Украины в Китай”</p>
+            </div>
+            
+            <div class="service_pic">
+                <img src="{% static 'images/investment-instruction.png' %}">
+                <p>Варианты страхования на выбор</p>
+            </div>
+        </div>
+       
         <div class="button_center">
             <a class="round_button_order" href="">Задать вопрос</a>
         </div>

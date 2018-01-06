@@ -2,7 +2,7 @@ a {
 	text-decoration: none;
 	color: black;
 }
-.menu ul, .menu li{
+html, body, .menu ul, .menu li{
 	margin: 0;
 	padding: 0;
 }
@@ -23,8 +23,12 @@ a {
 	position: relative;
 	width:auto;
 	display: block;
-	padding: 2%;
+	padding: 3% 2% 0% 0%;
 	text-align: center;	
+}
+.phone_header img, .phone_header p{
+	display: inline;
+	vertical-align: middle;
 }
 .round_button_phone {
 	font-weight: bold;
@@ -37,7 +41,7 @@ a {
 	text-align: center;
 	text-decoration: none;
 	padding: 10px;
-	margin: 2% 3%;
+	margin: 2% 3% 2% 0%;
 	border: 1px solid #ddd;
 	border-radius: 20px;
 	box-shadow: 0 3px 5px #ccc;
@@ -76,38 +80,41 @@ a {
 }
 .main_title{
 	display: inline-block;
-	margin: 1% 5%;
+	margin: 5% 40% 5% 1%;
 }
 .main_title p{
 	font-size: 30px;
 }
 .question_footer{
 	display: block;
-	margin: 10% 5% 2% 5%;
-	text-align: center;
+	margin: 5% 5% 2% 5%;
 }
 .question_footer p{
-	font-size: 20px;
+	text-align: center;
+	font-size: 25px;
 	font-weight: bold;
 }
 .box{
 	float: right;
+	margin: 2% 15% 2% 0%;
 	position: relative;
 	width:50%;
 	display: inline-block;
 	text-shadow: 0 1px 0 #fff;
 	text-decoration: none;
-	padding: 10px;
-	margin: 2% 3%;
 	border: 1px solid #ddd;
 	border-radius: 5px;
 	box-shadow: 0 3px 5px #ccc;
 }
+.box.left{
+	float: left;
+	margin: 2% 0% 2% 15%;
+}
 .box img{
-	display: inline-block; 
+	display: inline-block;
 	position: relative; 
 	float: left; 
-	margin: 5%;
+	margin: 9% 12%;
 }
 .boxes_block{
 	display: inline-block;
@@ -116,3 +123,32 @@ a {
 	display: inline-block;
 	margin: 5% 0% 5% 45%;
 }
+.box_text{
+	padding: 5% ;
+}
+.phone_line p{
+	color: #fff;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 20px;
+	margin: 0% 2% 0% 0%;
+}
+.phone_line img{
+	vertical-align: middle;
+	margin: 0%;
+}
+.phone_line{
+	padding: 1% 0%;
+	width: 100%;
+	text-align: center;
+}
+.service_pic{
+	margin: 1%;
+	display: inline-block;
+	text-align: center;
+	width: 25%;
+}
+.service{
+	text-align: center;
+}
+
