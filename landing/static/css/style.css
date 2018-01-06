@@ -18,7 +18,9 @@ a {
 	padding: 3% 2%;
 	text-align: center;
 }
-.round_button_phone:hover {
+.round_button_phone:hover, 
+.round_button_order:hover, 
+.round_button_consultation:hover {
 	margin: 5px auto 3px;
 	box-shadow: 0 0 1px #eee;
 }
@@ -43,6 +45,38 @@ a {
 	padding: 10px;
 	margin: 2% 3%;
 	border: 1px solid #ddd;
+	border-radius: 20px;
+	box-shadow: 0 3px 5px #ccc;
+}
+.round_button_order {
+	float: right;
+	position: relative;
+	width:auto;
+	display: block;
+	background:#ff5722; 
+	color: #fff;
+	text-shadow: 0 1px 0 #fff;
+	text-align: center;
+	text-decoration: none;
+	padding: 15px 35px;
+	margin: 2% 3%;
+	border: 1px solid #ddd;
+	border-radius: 20px;
+	box-shadow: 0 3px 5px #ccc;
+}
+.round_button_consultation {
+	float: right;
+	position: relative;
+	width:auto;
+	display: block;
+	background: #fff; 
+	color: #ff5722 ;
+	text-shadow: 0 1px 0 #fff;
+	text-align: center;
+	text-decoration: none;
+	padding: 15px 35px;
+	margin: 2% 3%;
+	border: 1px solid #ff5722;
 	border-radius: 20px;
 	box-shadow: 0 3px 5px #ccc;
 }
