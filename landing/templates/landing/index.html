@@ -1,10 +1,10 @@
 {% load staticfiles %}
-<html>
+<html style="max-width: 100%;">
     <head>
         <title>Доставка Сборных Грузов из Китая в Украину</title>
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
     </head>
-    <body>
+    <body style="max-width: 100%;">
         <header>
             <nav class="menu">
                 <ul>
@@ -160,7 +160,7 @@
 
         <p style="text-align: center; margin: 0% 32% 5% 32%;">(в таблице представлены цены при оформлении на наш контракт; при объеме менее 1м<sup>3</sup> могут применятся привышающие коэфициенты)</p>
 
-        <table>
+        <table class="prices_table">
           <tr>
             <th>Цена до Одессы <b>за м<sup>3</sup></b></th>
             <th>Плотность <b>кг/м<sup>3</sup></b></th>
@@ -230,6 +230,18 @@
 
         <div class="question_footer" style="margin: 5% 30% 0% 30%;">
             <p>Вы сами выбираете способ таможенного оформления:</p>
+        </div>
+
+        <div class="button_center" style="margin: 5% 0% 5% 38%;">
+            <a class="round_button_order" href="">Просчитать оба варианта бесплатно</a>
+        </div>
+
+        <div class="question_footer" style="margin: 5% 30% 0% 30%;">
+            <p>Стоимость процедур при разном типе оформления</p>
+        </div>
+
+        <div class="button_center" style="margin: 5% 0% 5% 40%;">
+            <a class="round_button_order" href="">Выбрать более выгодный вариант</a>
         </div>
     </body>
 </html>

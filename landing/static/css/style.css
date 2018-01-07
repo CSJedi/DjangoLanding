@@ -162,7 +162,7 @@ html, body, .menu ul, .menu li{
 .service{
 	text-align: center;
 }
-table {
+.prices_table {
     border-collapse: collapse;
     align-content: center;
 	margin: 1% 25% 2% 30%;
@@ -172,11 +172,12 @@ table {
 	border-radius: 5px;
 	box-shadow: 0 3px 5px #ccc;
 }
-th{
+.prices_table th{
 	background: #33acf7;
 	color:#fff;
 }
-th, td {
+.prices_table th, .prices_table td, 
+.contract th, .contract td  {
 	padding: 2%;
     text-align: center;
 }
