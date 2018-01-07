@@ -182,6 +182,72 @@ html, body, .menu ul, .menu li{
     text-align: center;
 }
 .pnone_logo{
-	margin: -3% 50%;
 	background: #fff;
 }
+/* footer */
+.callback-container {
+	min-width: 770px;
+	width: 15%;
+	border: 1px solid #e5e6e8;
+	margin:  0 auto;
+	border-radius: 10px;
+	background-color: #fff;
+	box-shadow: 0 0 10px #d2d2d2;
+	position: relative;
+}
+.map-container>img {
+	width: 100%;
+}
+.callback-container>form>button {
+	min-width: 315px;
+	min-height: 50px;
+	margin: 50px auto 25px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	color: #fff;
+	background-color: #ff5722;
+	border: 0px solid #fff;
+	border-radius: 50px;
+}
+.callback-container>form {
+	display:  flex;
+	flex-direction:  column;
+	margin: 0;
+}
+.callback-container>form p{
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	color: #000;
+	margin: 0;
+	line-height: 30px;
+}
+.callback-container .call_us, .callback-container .call_us>strong{
+	display:  flex;
+	flex-direction:  row;
+	justify-content: center;
+	align-items: center;
+}
+.callback-container .call_us img {
+	margin-left: 20px;
+	margin-right: 10px;
+}
+.callback-container .call_us{
+	margin-bottom: 50px;
+}
+article.contacts-container {
+	background-color: #1e2e3b;
+	color: #fff;
+	margin-top: -145px;
+	padding-top: 145px;
+	display:  flex;
+	flex-direction:  column;
+	align-items: center;
+}
+.contacts-container>h1 {
+	margin:  75px auto 35px;
+}
+.red{
+	background-color: #ff5722;
+	height: 200px;
+}
+/* footer end */
