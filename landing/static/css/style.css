@@ -133,6 +133,17 @@ html, body, .menu ul, .menu li{
 	font-size: 20px;
 	margin: 0% 2% 0% 0%;
 }
+.line2 p{
+	color: #000;
+}
+.line2{
+	padding: 0%;
+}
+.phone_line a{
+	float: none; 
+	position: none; 
+	display: inline-block;
+}
 .phone_line img{
 	vertical-align: middle;
 	margin: 0%;
@@ -151,4 +162,25 @@ html, body, .menu ul, .menu li{
 .service{
 	text-align: center;
 }
-
+table {
+    border-collapse: collapse;
+    align-content: center;
+	margin: 1% 25% 2% 30%;
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	box-shadow: 0 3px 5px #ccc;
+}
+th{
+	background: #33acf7;
+	color:#fff;
+}
+th, td {
+	padding: 2%;
+    text-align: center;
+}
+.pnone_logo{
+	margin: -3% 50%;
+	background: #fff;
+}
