@@ -243,7 +243,68 @@
         <!--<div class="button_center" style="margin: 5% 0% 5% 40%;">-->
             <!--<a class="round_button_order" href="">Выбрать более выгодный вариант</a>-->
         <!--</div>-->
-        <div class="red"></div>
+    <section class="cost-table">
+        <h1>Стоимость процедур при разном типе оформления </h1>
+        <table>
+            <thead>
+            <tr>
+                <th>Процедура</th>
+                <th>Наш контракт</th>
+                <th>Ваш контракт</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Доставка на наш склад в Китае</td>
+                <td colspan="2">Зависит от места отгрузки</td>
+            </tr>
+            <tr>
+                <td>Погрузка груза в контейнер</td>
+                <td rowspan="10">Исходя из калькулятора <a href="#">Сделать расчет</a> </td>
+                <td rowspan="5">Перевозка, 100-180 $/м3 </td>
+            </tr>
+            <tr>
+                <td>Погрузка контейнера на борт судна</td>
+            </tr>
+            <tr>
+                <td>Фрахт морской (перевозка из Китая в Украину)</td>
+            </tr>
+            <tr>
+                <td>Выгрузка контейнера с борта судна</td>
+            </tr>
+            <tr>
+                <td>Расформирование контейнера </td>
+            </tr>
+            <tr>
+                <td>Экспедирование в порту</td>
+                <td>Один платеж за партию 110 $</td>
+            </tr>
+            <tr>
+                <td>Услуги брокера</td>
+                <td>Один платеж за партию 200-300 $</td>
+            </tr>
+            <tr>
+                <td>Уплата пошлины в таможню</td>
+                <td>0-15% от стоимости груза с доставкой (в зависимости от вида тов</td>
+            </tr>
+            <tr>
+                <td>Уплата НДС в таможню</td>
+                <td>20% от стоимости груза с доставкой и пошлиной</td>
+            </tr>
+            <tr>
+                <td>Вывоз груза из порта по Одессе</td>
+                <td>Своей машиной бесплатно или 120$ за партию </td>
+            </tr>
+            <tr>
+                <td>Доставка по Украине</td>
+                <td colspan="2"> Зависит от места доставки</td>
+            </tr>
+            </tbody>
+        </table>
+        <form action="">
+            <button>Выбрать более выгодный вариант</button>
+        </form>
+    </section>
     <footer>
         <section class="footer-container">
             <div class="callback-container">
@@ -260,7 +321,9 @@
             </div>
             <article class="contacts-container">
                 <h1>контакты</h1>
-                <p>Подробные консультации о работе компании, стоимости  услуг и це</p>
+                <p>Подробные консультации о работе компании, стоимости  услуг
+                    и ценах на растаможку можно получить ежедневно с 9.00 до 18.00
+                    кроме субботы и воскресенья по телефонам:</p>
                 <div class="telephones-container">
                     <ul>
                         <li>
@@ -268,7 +331,7 @@
                             <p>+38 (048) 772-41-00</p>
                         </li>
                         <li>
-                            <img src="{% static 'images/envelope.png' %}" alt="small white telephone icon">
+                            <img src="{% static 'images/phone-icon2.png' %}" alt="small white telephone icon">
                             <p>+38 (067) 009-52-52</p>
                         </li>
                     </ul>
@@ -279,12 +342,12 @@
                     <p>+38 (050) 416-30-27</p>
                 </div>
                 <div class="email-container">
-                    <img src="{% static 'images/phone-icon2.png' %}" alt="small white email icon">
+                    <img src="{% static 'images/envelope.png' %}" alt="small white email icon">
                     <p>info@rastamozhka.com</p>
                 </div>
             </article>
             <article class="map-container">
-                <img src="{% static 'images/map.png' %}" alt="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d687.6896148319265!2d30.726016327885812!3d46.41384447912369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6336ff7e679cd%3A0xd218aef31379b2ac!2z0JvRjtGB0YLQtNC-0YDRhNGB0LrQsNGPINC00L7RgC4sIDE0MCwg0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1515354722244" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </article>
         </section>
     </footer>

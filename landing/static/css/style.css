@@ -195,8 +195,9 @@ html, body, .menu ul, .menu li{
 	box-shadow: 0 0 10px #d2d2d2;
 	position: relative;
 }
-.map-container>img {
+.map-container>iframe {
 	width: 100%;
+	height: 430px;
 }
 .callback-container>form>button {
 	min-width: 315px;
@@ -245,9 +246,73 @@ article.contacts-container {
 }
 .contacts-container>h1 {
 	margin:  75px auto 35px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
-.red{
-	background-color: #ff5722;
-	height: 200px;
+.telephones-container>ul {
+    list-style-type: none;
+    margin: 70px auto 40px;
+    padding: 0;
+}
+.telephones-container>ul>li,
+.social_networks-container,
+.email-container {
+    display: flex;
+    align-items: center;
+}
+.telephones-container>ul>li img,
+.social_networks-container img,
+.email-container img {
+    margin-right: 15px;
+}
+.telephones-container>ul>li p,
+.social_networks-container p,
+.email-container p{
+    margin: 0;
+}
+.contacts-container>p{
+    color: #879096;
+    word-wrap: break-word;
+    min-width: 460px;
+    display: block;
+    margin: 0 auto;
+    width: 33%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+.telephones-container>ul>li {
+    margin: 10px auto;
+}
+.social_networks-container {
+    margin-bottom: 40px;
+}
+.email-container {
+    margin-bottom: 90px;
 }
 /* footer end */
+/* cost-table */
+.cost-table th {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color:#fff;
+    font-weight: 100;
+    border: 0px solid #fff;
+}
+.cost-table td{
+    border: 1px solid #b3e5fc;
+}
+.cost-table table{
+    min-width: 1030px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+.cost-table thead {
+    background-color: #03a9f4;
+}
