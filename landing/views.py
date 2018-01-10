@@ -1,4 +1,7 @@
 from django.shortcuts import render
+from .models import DelyveryInfo, ProcedureInfo
 
 def index(request):
-    return render(request, 'landing/index.html')
+	delyverys = DelyveryInfo.objects.all()
+	procedures = ProcedureInfo.objects.all()
+	return render(request, 'landing/index.html', {'delyverys': delyverys, 'procedures': procedures } )
