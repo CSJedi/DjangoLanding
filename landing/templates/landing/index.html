@@ -178,8 +178,9 @@
         <div class="button_center" style="margin: 5% 0% 5% 42%;">
             <a class="round_button_order" href="">Заказать доставку из Китая</a>
         </div>
-
-       <img class="pnone_logo" src="{% static 'images/big-phone-icon.png' %}" alt="лого телефона">
+    <div class="telephone-logo-container">
+        <img class="pnone_logo" src="{% static 'images/big-phone-icon.png' %}" alt="лого телефона">
+    </div>
        
         <div class="phone_line line2" style="background-image:url({% static 'images/backgound-block7.png' %}); " alt="фон">
             <p>Звоните:</p>
@@ -189,87 +190,84 @@
             <p><b>+38 (067) 009-52-52</b></p>
             <a class="round_button_order" style="float: none; position: none; display: inline-block;" href="">Заказать обратный звонок</a>
         </div>
-
-        <div class="question_footer" style="margin: 5% 30% 0% 30%;">
-            <p>Вы сами выбираете способ таможенного оформления:</p>
+    <section class="calculate-delivery">
+        <div class="calculate-delivery-title">
+            <h1>Вы сами выбираете способ таможенного оформления:</h1>
         </div>
 
-        <div class="button_center" style="margin: 5% 0% 5% 38%;">
+        <div class="button_center">
             <a class="round_button_order" href="">Просчитать оба варианта бесплатно</a>
         </div>
-
-        <div class="question_footer" style="margin: 5% 30% 0% 30%;">
-            <p>Стоимость процедур при разном типе оформления</p>
-        </div>
-
-        <div class="button_center" style="margin: 5% 0% 5% 40%;">
-            <a class="round_button_order" href="">Выбрать более выгодный вариант</a>
-        </div>
+    </section>
     <section class="cost-table">
-        <h1>Стоимость процедур при разном типе оформления </h1>
-        <table>
-            <thead>
-            <tr>
-                <th>Процедура</th>
-                <th>Наш контракт</th>
-                <th>Ваш контракт</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Доставка на наш склад в Китае</td>
-                <td colspan="2">Зависит от места отгрузки</td>
-            </tr>
-            <tr>
-                <td>Погрузка груза в контейнер</td>
-                <td rowspan="10">Исходя из калькулятора <a href="#">Сделать расчет</a> </td>
-                <td rowspan="5">Перевозка, 100-180 $/м3 </td>
-            </tr>
-            <tr>
-                <td>Погрузка контейнера на борт судна</td>
-            </tr>
-            <tr>
-                <td>Фрахт морской (перевозка из Китая в Украину)</td>
-            </tr>
-            <tr>
-                <td>Выгрузка контейнера с борта судна</td>
-            </tr>
-            <tr>
-                <td>Расформирование контейнера </td>
-            </tr>
-            <tr>
-                <td>Экспедирование в порту</td>
-                <td>Один платеж за партию 110 $</td>
-            </tr>
-            <tr>
-                <td>Услуги брокера</td>
-                <td>Один платеж за партию 200-300 $</td>
-            </tr>
-            <tr>
-                <td>Уплата пошлины в таможню</td>
-                <td>0-15% от стоимости груза с доставкой (в зависимости от вида тов</td>
-            </tr>
-            <tr>
-                <td>Уплата НДС в таможню</td>
-                <td>20% от стоимости груза с доставкой и пошлиной</td>
-            </tr>
-            <tr>
-                <td>Вывоз груза из порта по Одессе</td>
-                <td>Своей машиной бесплатно или 120$ за партию </td>
-            </tr>
-            <tr>
-                <td>Доставка по Украине</td>
-                <td colspan="2"> Зависит от места доставки</td>
-            </tr>
-			{% for info in procedures %}
-			  <tr>
-				<td>{{ info.procedureName}} </td>
-				<td>{{ info.ourContractInfo }}</td>
-				<td>{{ info.yourContractInfo  }}</td>
-			  </tr>
-			 {% endfor %}
-            </tbody>
-        </table>
+        <div class="table-title">
+            <h1>Стоимость процедур при разном типе оформления </h1>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                <tr>
+                    <th>Процедура</th>
+                    <th>Наш контракт</th>
+                    <th>Ваш контракт</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Доставка на наш склад в Китае</td>
+                    <td colspan="2">Зависит от места отгрузки</td>
+                </tr>
+                <tr>
+                    <td>Погрузка груза в контейнер</td>
+                    <td rowspan="10">Исходя из калькулятора <a href="#">Сделать расчет</a> </td>
+                    <td rowspan="5">Перевозка, 100-180 $/м3 </td>
+                </tr>
+                <tr>
+                    <td>Погрузка контейнера на борт судна</td>
+                </tr>
+                <tr>
+                    <td>Фрахт морской (перевозка из Китая в Украину)</td>
+                </tr>
+                <tr>
+                    <td>Выгрузка контейнера с борта судна</td>
+                </tr>
+                <tr>
+                    <td>Расформирование контейнера </td>
+                </tr>
+                <tr>
+                    <td>Экспедирование в порту</td>
+                    <td>Один платеж за партию 110 $</td>
+                </tr>
+                <tr>
+                    <td>Услуги брокера</td>
+                    <td>Один платеж за партию 200-300 $</td>
+                </tr>
+                <tr>
+                    <td>Уплата пошлины в таможню</td>
+                    <td>0-15% от стоимости груза с доставкой (в зависимости от вида тов</td>
+                </tr>
+                <tr>
+                    <td>Уплата НДС в таможню</td>
+                    <td>20% от стоимости груза с доставкой и пошлиной</td>
+                </tr>
+                <tr>
+                    <td>Вывоз груза из порта по Одессе</td>
+                    <td>Своей машиной бесплатно или 120$ за партию </td>
+                </tr>
+                <tr>
+                    <td>Доставка по Украине</td>
+                    <td colspan="2"> Зависит от места доставки</td>
+                </tr>
+                {% for info in procedures %}
+                <tr>
+                    <td>{{ info.procedureName}} </td>
+                    <td>{{ info.ourContractInfo }}</td>
+                    <td>{{ info.yourContractInfo  }}</td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
         <form action="">
             <button>Выбрать более выгодный вариант</button>
         </form>

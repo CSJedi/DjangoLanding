@@ -3,8 +3,7 @@ a {
 	color: black;
 }
 html, body, .menu ul, .menu li{
-	margin: 0;
-	padding: 0;
+	font-family: "Open Sans", sans-serif;
 }
 .menu ul {
 	list-style: none;
@@ -151,7 +150,12 @@ html, body, .menu ul, .menu li{
 .phone_line{
 	padding: 1% 0%;
 	width: 100%;
+	background-image: url(/static/images/backgound-block3.png);
 	text-align: center;
+	background-size:  100%;
+	margin-top: -50px;
+	padding-top: 30px;
+	background-repeat:  no-repeat;
 }
 .service_pic{
 	margin: 1%;
@@ -165,12 +169,12 @@ html, body, .menu ul, .menu li{
 .prices_table {
     border-collapse: collapse;
     align-content: center;
-	margin: 1% 25% 2% 30%;
-	display: inline-block;
-	text-decoration: none;
-	border: 1px solid #ddd;
-	border-radius: 5px;
-	box-shadow: 0 3px 5px #ccc;
+    margin: 1% 25% 2% 30%;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px #ccc;
 }
 .prices_table th{
 	background: #33acf7;
@@ -179,10 +183,14 @@ html, body, .menu ul, .menu li{
 .prices_table th, .prices_table td, 
 .contract th, .contract td  {
 	padding: 2%;
-    text-align: center;
+	text-align: center;
+	border: 0;
 }
 .pnone_logo{
 	background: #fff;
+	padding: 20px;
+	border-radius: 60px;
+	box-shadow: 0 0 30px #d4cfcf;
 }
 /* footer */
 .callback-container {
@@ -192,7 +200,7 @@ html, body, .menu ul, .menu li{
 	margin:  0 auto;
 	border-radius: 10px;
 	background-color: #fff;
-	box-shadow: 0 0 10px #d2d2d2;
+	box-shadow: 0 0 15px #d2d2d2;
 	position: relative;
 }
 .map-container>iframe {
@@ -200,7 +208,7 @@ html, body, .menu ul, .menu li{
 	height: 430px;
 }
 .callback-container>form>button {
-	min-width: 315px;
+	min-width: 41%;
 	min-height: 50px;
 	margin: 50px auto 25px;
 	font-family: "Open Sans", sans-serif;
@@ -302,17 +310,106 @@ article.contacts-container {
     line-height: 24px;
     text-align: center;
     color:#fff;
+    padding: 2.5%;
+    /* padding: 0; */
+    border-right: 1px solid #03a9f4;
+    border-left: 1px solid #03a9f4;
     font-weight: 100;
-    border: 0px solid #fff;
+    /* border-radius: 0px; */
+    /* display: inline-block; */
 }
 .cost-table td{
     border: 1px solid #b3e5fc;
+    padding: 1.5%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
 }
+
+td {}
 .cost-table table{
-    min-width: 1030px;
+    min-width: 75%;
     margin: 0 auto;
-    border-collapse: collapse;
+    display: inline-block;
+    border-collapse:  collapse;
+    border: 1px solid #b3e5fc;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #b3e5fc;
 }
 .cost-table thead {
-    background-color: #03a9f4;
+
+/* border: 1px solid #03a9f4; */
+
+border-radius: 10px 10px 0 0;
+
+background-color: #03a9f4;
+}
+.table-container {
+	display: flex;
+}
+.cost-table th:last-child {
+	border-radius: 0 10px 0 0;
+	border-right: 0 solid #03a9f4;
+	border-left: 0px solid #03a9f4;
+}
+.cost-table th:first-child {
+	border-radius: 10px 0 0 0;
+	border-right: 0 solid #03a9f4;
+	border-left: 0 solid #03a9f4;
+}
+.cost-table table thead{
+	border: 0px solid #03a9f4;
+	/* box-shadow: 0 0 0px #03a9f4, 0 0 0px #03a9f4, 0 0 0px #03a9f4, 0 0 20px #03a9f4; */
+}
+.cost-table>form>button {
+	min-width: 28%;
+	min-height: 50px;
+	margin: 50px auto 25px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	color: #fff;
+	background-color: #ff5722;
+	border: 0px solid #fff;
+	border-radius: 50px;
+}
+form {
+	/* margin:  0 auto; */
+	display: flex;
+}
+
+.cost-table tr:last-child td:last-child {
+	border: 0;
+	border-radius: 0 0 10px 0;
+	/* background-color: #fdfd; */
+}
+
+.cost-table tr:last-child td:first-child {
+	border-left: 0;
+	border-bottom: 0;
+}
+.table-title, .calculate-delivery-title{
+	display: flex;
+	align-items:  center;
+	flex-direction:  row;
+	justify-content:  center;
+}
+.table-title h1, .calculate-delivery-title h1{
+	font-family: "Open Sans", sans-serif;
+	margin: 5.85% auto;
+	line-height: 30px;
+	padding: 0 5%;
+	font-size: 25px;
+}
+.prices_table th:last-child {
+	border-radius: 0 10px 0  0;
+}
+
+.prices_table th:first-child {
+	border-radius: 10px 0 0 0;
+}
+.telephone-logo-container{
+	display: flex;
+	align-items:  center;
+	justify-content:  center;
+	flex-direction: row;
 }
