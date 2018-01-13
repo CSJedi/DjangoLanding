@@ -28,20 +28,22 @@
                     <p>Звоните:</p>
                 </div>
             </nav>
+             <div class="main_title">
+                 <p><b>Доставка</b> сборных грузов<br/>карго<br/>из Китая в <b>любую точку Украины</b></p>
+                 <a class="round_button_order" href="">Заказать</a>
+                 <a class="round_button_consultation" href="">Получить консультацию</a>
+                 <a class="round_button_consultation" href="">Получить консультацию</a>
+             </div>
+             <img src="{% static 'images/rectangle.png' %}" alt="rectangle">
         </header>
 
-        <div class="main_title">
-            <p><b>Доставка</b> сборных грузов<br/>карго<br/>из Китая в <b>любую точку Украины</b></p>
-            <a class="round_button_order" href="">Заказать</a>
-            <a class="round_button_consultation" href="">Получить консультацию</a>
-        </div>
-         
-        <div class="question_footer">
-            <p>Почему наши клиенты довольны?</p>
-        </div>
 
         <div class="boxes_block">
-            <div class="box">
+            <div class="question_footer">
+                <p>Почему наши клиенты довольны?</p>
+            </div>
+            <div class="box" id="first-box">
+
                 <img src="{% static 'images/wallet.png' %}" alt="кошелёк">
                 <div class="box_text">
                     <p><b>Отличная цена</b></p>
@@ -50,7 +52,7 @@
                 </div>
             </div>
 
-            <div class="box left">
+            <div class="box left" id="second-box">
                 <img src="{% static 'images/file.png' %}" alt="файл">
                 <div class="box_text">
                     <p><b>Услуги без посредников</b></p>
@@ -58,7 +60,7 @@
                 </div>
             </div>
             
-            <div class="box">
+            <div class="box" id="third-box">
                 <img src="{% static 'images/box.png' %}" alt="фон">
                 <div class="box_text">
                     <p><b>Удобный объем поставки</b></p>
@@ -66,7 +68,7 @@
                 </div>
             </div>
             
-            <div class="box left">
+            <div class="box left" id="forth-box">
                 <img src="{% static 'images/money.png' %}" alt="иконка деньги">
                 <div class="box_text">
                     <p><b>Гарантия фиксированной цены</b></p>
@@ -74,7 +76,7 @@
                 </div>
             </div>
             
-            <div class="box">
+            <div class="box" id="fifth-box">
                 <img src="{% static 'images/money-bag.png' %}" alt="иконка деньги">
                 <div class="box_text">
                     <p><b>Экономия на доставке по Китаю</b></p>
@@ -82,7 +84,7 @@
                 </div>
             </div>
             
-            <div class="box left">
+            <div class="box left" id="sexth-box">
                 <img src="{% static 'images/solar-system.png' %}" alt="солнечная система">
                 <div class="box_text">
                     <p><b>Отлаженная и надежная система работы</b></p>
@@ -90,7 +92,7 @@
                 </div>
             </div>
             
-            <div class="box">
+            <div class="box" id="seventh-box">
                 <img src="{% static 'images/cranes.png' %}" alt="кран">
                 <div class="box_text">
                     <p><b>Формирование отдельных партий в разные города Украины</b></p>
@@ -98,7 +100,7 @@
                 </div>
             </div>
             
-            <div class="box left">
+            <div class="box left" id="eigth-box">
                 <img src="{% static 'images/hourglass.png' %}" alt="песочные часы">
                 <div class="box_text">
                     <p><b>Сроки 35-60 дней</b></p>
@@ -106,12 +108,13 @@
                 </div>
             </div>
         </div>
-        
-        <div class="button_center">
-            <a class="round_button_order" href="">Узнать подробности</a>
+        <div class="button_center-container">
+            <div class="button_center">
+                <a class="round_button_order" href="">Узнать подробности</a>
+            </div>
         </div>
         
-        <div class="phone_line" style="background-image:url({% static 'images/backgound-block3.png' %}); ">
+        <div class="phone_line_callback" style="background-image:url({% static 'images/backgound-block3.png' %}); ">
             <p>Звоните:</p>
             <img src="{% static 'images/phone-icon-white.png' %}" alt="иконка телефон">
             <p><b>+38 (048) 772-41-00</b></p>
@@ -119,65 +122,89 @@
             <p><b>+38 (067) 009-52-52</b></p>
             <a class="round_button_phone" style="background: #fff; " href="">Заказать обратный звонок</a>
         </div>
+        <div class="block4">
+            <div class="question_footer">
+                <p>Мы рады Вам представить качественный<br/>консьерж-сервис и заботу</p>
+            </div>
+            <div class="service">
+                <div class="service_pic">
+                    <img src="{% static 'images/support.png' %}" alt="поддержка">
+                    <p>Всегда на связи</p>
+                </div>
 
+                <div class="service_pic">
+                    <img src="{% static 'images/trunck.png' %}" alt="грузовик">
+                    <p>Отправка любой транспортной компанией по Украине</p>
+                </div>
+
+                <div class="service_pic">
+                    <img src="{% static 'images/credit-card.png' %}" alt="кредитная карточка">
+                    <p>Разные формы оплаты</p>
+                </div>
+
+                <div class="service_pic">
+                    <img src="{% static 'images/invoice.png' %}" alt="договор">
+                    <p>Услуга “Заплатить за товар из Украины в Китай”</p>
+                </div>
+
+                <div class="service_pic">
+                    <img src="{% static 'images/investment-instruction.png' %}" alt="инвестиции">
+                    <p>Варианты страхования на выбор</p>
+                </div>
+            </div>
+            <div class="btn-container">
+                <div class="button_center">
+                    <a class="round_button_order" href="">Задать вопрос</a>
+                </div>
+            </div>
+        </div>
         <div class="question_footer">
-            <p>Мы рады Вам представить качественный<br/>консьерж-сервис и заботу</p>
-        </div>
-        <div class="service">
-             <div class="service_pic">
-                <img src="{% static 'images/support.png' %}" alt="поддержка">
-                <p>Всегда на связи</p>
-            </div>
-
-            <div class="service_pic">
-                <img src="{% static 'images/trunck.png' %}" alt="грузовик">
-                <p>Отправка любой транспортной компанией по Украине</p>
-            </div>
-            
-            <div class="service_pic">
-                <img src="{% static 'images/credit-card.png' %}" alt="кредитная карточка">
-                <p>Разные формы оплаты</p>
-            </div>
-
-            <div class="service_pic">
-                <img src="{% static 'images/invoice.png' %}" alt="договор">
-                <p>Услуга “Заплатить за товар из Украины в Китай”</p>
-            </div>
-            
-            <div class="service_pic">
-                <img src="{% static 'images/investment-instruction.png' %}" alt="инвестиции">
-                <p>Варианты страхования на выбор</p>
-            </div>
-        </div>
-       
-        <div class="button_center">
-            <a class="round_button_order" href="">Задать вопрос</a>
-        </div>
-
-        <div class="question_footer" style="margin: 5% 5% 0% 5%;">
             <p>Отличные цены:</p>
         </div>
-
-        <p style="text-align: center; margin: 0% 32% 5% 32%;">(в таблице представлены цены при оформлении на наш контракт; при объеме менее 1м<sup>3</sup> могут применятся привышающие коэфициенты)</p>
-		
-        <table class="prices_table">
-          <tr>
-            <th>Цена до Одессы <b>за м<sup>3</sup></b></th>
-            <th>Плотность <b>кг/м<sup>3</sup></b></th>
-            <th>Примеры из практики в этой категории плотности</th>
-          </tr>
-		  {% for info in delyverys %}
-          <tr>
-            <td>{{ info.shippingCost }} $</td>
-            <td>{{ info.destiny }}</td>
-            <td>{{ info.cargoName }}</td>
-          </tr>
-		  {% endfor %}
-        </table>
-		
-        <div class="button_center" style="margin: 5% 0% 5% 42%;">
-            <a class="round_button_order" href="">Заказать доставку из Китая</a>
+		<div class="prices_table-container">
+            <table class="prices_table">
+                <tr>
+                    <th>Цена до Одессы <b>за м<sup>3</sup></b></th>
+                    <th>Плотность <b>кг/м<sup>3</sup></b></th>
+                    <th>Примеры из практики в этой категории плотности</th>
+                </tr>
+                {% for info in delyverys %}
+                <tr>
+                    <td>{{ info.shippingCost }} $</td>
+                    <td>{{ info.destiny }}</td>
+                    <td>{{ info.cargoName }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+            <p>(в таблице представлены цены при оформлении на наш контракт; при объеме менее 1м<sup>3</sup> могут применятся привышающие коэфициенты)</p>
+            <div class="button_center">
+                <a class="round_button_order" href="">Заказать доставку из Китая</a>
+            </div>
         </div>
+
+         <div class="prices_table2-container">
+             <table class="prices_table2">
+                 <thead>
+                 <tr>
+                     <th colspan="3">Узнайте стоимость перевозки уже сейчас:</th>
+                 </tr>
+                 </thead>
+
+                 <tbody>
+                 <tr>
+                     <td> <span>1</span> </td> <td>Введите вес груза</td> <td><button>300 000</button> <span>кг.</span> </td>
+                 </tr>
+                 <tr>
+                     <td> <span>2</span>  </td> <td>Введите объем груза</td> <td><button>300 000</button> <span>м</span> <span class="litle">3</span> </td>
+                 </tr>
+                 <tr>
+                     <td>  <span>3</span> </td> <td>Получите цену перевозки включая растаможку</td> <td><button>300 000 $</button></td>
+                 </tr>
+                 </tbody>
+             </table>
+
+         </div>
+
     <div class="telephone-logo-container">
         <img class="pnone_logo" src="{% static 'images/big-phone-icon.png' %}" alt="лого телефона">
     </div>
@@ -194,7 +221,94 @@
         <div class="calculate-delivery-title">
             <h1>Вы сами выбираете способ таможенного оформления:</h1>
         </div>
+        <div class="calculate-delivery-container">
+            <table class="calculate-delivery1">
+                <thead>
+                <tr>
+                    <th>
+                     <div>
+                        <img src="{% static 'images/diploma2.png' %}" alt="diploma"> <span>Наш контракт</span>
+                    </div>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+            <tr>
+                <td>Плюсы</td>
+            </tr>
+            <tr>
+                <td>Отличная цена доставки и растаможки</td>
+            </tr>
+            <tr>
+                <td>Нет вопроса с банком для перевода валюты <img src="{% static 'images/small-border-table-line.png' %}" alt="small-border-table-line"></td>
+            </tr>
+            <tr>
+                <td>Нет вопроса с таможней по оформлению декларации <img src="{% static 'images/small-border-table-line.png' %}" alt="small-border-table-line"> </td>
+            </tr>
+            <tr>
+                <td>Нет вопроса с налоговой по отчетности</td>
+            </tr>
+            <tr>
+                <td class="stripple-cell">Нюансы</td>
+            </tr>
+            <tr>
+                <td>Отправка из Гунчжоу и Шанхая <img src="{% static 'images/small-border-table-line.png' %}" alt="small-border-table-line"> </td>
+            </tr>
+            <tr>
+                <td>Сроки 45-60 дней <img src="{% static 'images/small-border-table-line.png' %}" alt="small-border-table-line"> </td>
+            </tr>
+            <tr>
+                <td>Tаможенное оформление нашей компанией-импортером копия</td>
+            </tr>
+            <tr></tr>
+            </tbody>
+            </table>
+            <table class="calculate-delivery2">
+                <thead>
+                <tr>
+                    <th>
+                        <div><img src="{% static 'images/diploma.png' %}" alt="diploma"> <span>Ваш контракт </span> </div>
+                    </th>
+                </tr>
+                </thead>
 
+                <tbody>
+                <tr>
+                    <td>Плюсы</td>
+                </tr>
+                <tr>
+                    <td>Отгрузка с любого крупного порта Китая <img src="{% static 'images/small-border-table-line.png' %}" alt="small-border-table-line"> </td>
+                </tr>
+                <tr>
+                    <td>сроки 35-50 дней</td>
+                </tr>
+                <tr>
+                    <td class="stripple-cell">Нюансы</td>
+                </tr>
+                <tr>
+                    <td>Заключение контракта с китайской стороной <img src="{% static 'images/small-border-table-line.png' %}" alt="small-border-table-line"> </td>
+                </tr>
+                <tr>
+                    <td>Аккредитация в таможне <img src="{% static 'images/small-border-table-line.png' %}" alt="small-border-table-line"> </td>
+                </tr>
+                <tr>
+                    <td>Оплата через украинский банк в Китай <img src="{% static 'images/small-border-table-line.png' %}" alt="small-border-table-line"> </td>
+                </tr>
+                <tr>
+                    <td>Соблюдение сроков валютного контроля <img src="{% static 'images/small-border-table-line.png' %}" alt="small-border-table-line"> </td>
+                </tr>
+                <tr>
+                    <td>Подготовка документов для экспедирования груза в порту <img src="{% static 'images/small-border-table-line.png' %}" alt="small-border-table-line"> </td>
+                </tr>
+                <tr>
+                    <td>Прохождение таможенного контроля <img src="{% static 'images/small-border-table-line.png' %}" alt="small-border-table-line"> </td>
+                </tr>
+                <tr>
+                    <td>Налоговая отчетность</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
         <div class="button_center">
             <a class="round_button_order" href="">Просчитать оба варианта бесплатно</a>
         </div>
