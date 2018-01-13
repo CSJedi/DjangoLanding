@@ -3,8 +3,9 @@
     <head>
         <title>Доставка Сборных Грузов из Китая в Украину</title>
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <script src="{% static 'scripts/calculator.js' %}"></script>
     </head>
-    <body style="width: 100%;">
+    <body style="width: 100%;" onload="calculator()">
          <header>
             <nav class="menu">
                 <ul>
@@ -192,13 +193,13 @@
 
                  <tbody>
                  <tr>
-                     <td> <span>1</span> </td> <td>Введите вес груза</td> <td><button>300 000</button> <span>кг.</span> </td>
+                     <td> <span>1</span> </td> <td>Введите вес груза</td> <td><input id="kg" onchange="calculator()" type="text" value="300000"/> <span>кг.</span> </td>
                  </tr>
                  <tr>
-                     <td> <span>2</span>  </td> <td>Введите объем груза</td> <td><button>300 000</button> <span>м</span> <span class="litle">3</span> </td>
+                     <td> <span>2</span>  </td> <td>Введите объем груза</td> <td><input id="volume" onchange="calculator()" type="text" value="300000"/><span>м</span> <span class="litle">3</span> </td>
                  </tr>
                  <tr>
-                     <td>  <span>3</span> </td> <td>Получите цену перевозки включая растаможку</td> <td><button>300 000 $</button></td>
+                     <td>  <span>3</span> </td> <td>Получите цену перевозки включая растаможку</td> <td><input id="result" type="text"></input></td>
                  </tr>
                  </tbody>
              </table>
