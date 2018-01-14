@@ -14,7 +14,7 @@ html, body, .menu ul, .menu li{
 	position: relative;
 	width:auto;
 	display: block;
-	padding: 3% 2%;
+	padding: 2.5% 0.5% 2% 2%;
 	text-align: center;
 }
 .phone_number{
