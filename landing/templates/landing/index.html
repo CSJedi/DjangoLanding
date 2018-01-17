@@ -7,32 +7,32 @@
     </head>
     <body style="width: 100%;" onload="calculator()">
          <header>
-            <nav class="menu">
-                <ul>
-                    <li><img src="{% static 'images/logo.png' %}" alt="логотип"></li>
-                    <li><a href="">Все услуги</a></li>
-                    <li><a href="">Почему мы?</a></li>
-                    <li><a href="">Контакты</a></li>
-                </ul>
-            </nav>
-            <nav class="phone_header">
-                <a class="round_button_phone" href="">Заказать обратный звонок</a> 
-                <div class="phone_number">
-                    <img src="{% static 'images/phone-icon.png' %}" alt="иконка телефона">
-                    <p><b>+38 (067) 009-52-52</b></p>
-                </div>
-                <div class="phone_number">
-                    <img src="{% static 'images/phone-icon.png' %}" alt="иконка телефона">
-                    <p><b>+38 (048) 772-41-00</b></p>
-                </div>
-                <div class="phone_number">
-                    <p>Звоните:</p>
-                </div>
-            </nav>
+             <div class="menu-nav">
+                 <nav class="menu">
+                     <ul>
+                         <li><img src="{% static 'images/logo.png' %}" alt="логотип"></li>
+                         <li><a href="">Все услуги</a></li>
+                         <li><a href="">Почему мы?</a></li>
+                         <li><a href="">Контакты</a></li>
+                     </ul>
+                 </nav>
+                 <nav class="phone_header">
+                     <div class="phone_number">
+                         <p>Звоните:</p>
+                     </div>
+                     <div class="phone_number">
+                         <img src="{% static 'images/phone-icon.png' %}" alt="иконка телефона">
+                         <p><b>+38 (067) 009-52-52</b></p>
+                     </div>
+                     <a class="round_button_phone" href="">Заказать обратный звонок</a>
+                 </nav>
+             </div>
              <div class="main_title">
                  <p><b>Доставка</b> сборных грузов<br/>карго<br/>из Китая в <b>любую точку Украины</b></p>
-                 <a class="round_button_order" href="">Заказать</a>
-                 <a class="round_button_consultation" href="">Получить консультацию</a>
+                 <div class="btns">
+                     <a class="round_button_order" href="">Заказать</a>
+                     <a class="round_button_consultation" href="">Получить консультацию</a>
+                 </div>
              </div>
              <img src="{% static 'images/rectangle.png' %}" alt="rectangle">
         </header>
@@ -42,69 +42,69 @@
             <div class="question_footer">
                 <p>Почему наши клиенты довольны?</p>
             </div>
-            <div class="box" id="first-box">
+            <div class="boxes">
+                <div class="box" id="first-box">
 
-                <img src="{% static 'images/wallet.png' %}" alt="кошелёк">
-                <div class="box_text">
-                    <p><b>Отличная цена</b></p>
-                    <p>Всего от 380 у.е. за куб</p>
-                    <a class="round_button_order" href="">Заказать</a> 
+                    <img src="{% static 'images/wallet.png' %}" alt="кошелёк">
+                    <div class="box_text">
+                        <h1>Отличная цена</h1>
+                        <p>Всего от 380 у.е. за куб</p>
+                        <a class="" href="">Заказать</a>
+                    </div>
                 </div>
-            </div>
+                <div class="box left" id="second-box">
+                    <img src="{% static 'images/file.png' %}" alt="файл">
+                    <div class="box_text">
+                        <h1>Услуги без посредников</h1>
+                        <p>Компания является экспедитором и таможенным брокером, имея договора со всеми судоходными линиями</p>
+                    </div>
+                </div>
 
-            <div class="box left" id="second-box">
-                <img src="{% static 'images/file.png' %}" alt="файл">
-                <div class="box_text">
-                    <p><b>Услуги без посредников</b></p>
-                    <p>Компания является экспедитором и таможенным брокером, имея договора со всеми судоходными линиями</p>
+                <div class="box" id="third-box">
+                    <img src="{% static 'images/box.png' %}" alt="фон">
+                    <div class="box_text">
+                        <h1>Удобный объем поставки</h1>
+                        <p>От 0,2 до 20 м3  (если больше - лучше <span class="orange">целым контейнером</span>)</p>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="box" id="third-box">
-                <img src="{% static 'images/box.png' %}" alt="фон">
-                <div class="box_text">
-                    <p><b>Удобный объем поставки</b></p>
-                    <p>От 0,2 до 20 м3  (если больше - лучше целым контейнером)</p>
+
+                <div class="box left" id="forth-box">
+                    <img src="{% static 'images/money.png' %}" alt="иконка деньги">
+                    <div class="box_text">
+                        <h1>Гарантия фиксированной цены</h1>
+                        <p>Цена точно не поменяется в процессе</p>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="box left" id="forth-box">
-                <img src="{% static 'images/money.png' %}" alt="иконка деньги">
-                <div class="box_text">
-                    <p><b>Гарантия фиксированной цены</b></p>
-                    <p>Цена точно не поменяется в процессе</p>
+
+                <div class="box" id="fifth-box">
+                    <img src="{% static 'images/money-bag.png' %}" alt="иконка деньги">
+                    <div class="box_text">
+                        <h1>Экономия на доставке по Китаю</h1>
+                        <p>Благодаря нашим складам в Гунчжоу и Шанхае </p>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="box" id="fifth-box">
-                <img src="{% static 'images/money-bag.png' %}" alt="иконка деньги">
-                <div class="box_text">
-                    <p><b>Экономия на доставке по Китаю</b></p>
-                    <p>Благодаря нашим складам в Гунчжоу и Шанхае </p>
+                <div class="box left" id="sexth-box">
+                    <img src="{% static 'images/solar-system.png' %}" alt="солнечная система">
+                    <div class="box_text">
+                        <h1>Отлаженная и надежная система работы</h1>
+                        <p>За счет большого опыта</p>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="box left" id="sexth-box">
-                <img src="{% static 'images/solar-system.png' %}" alt="солнечная система">
-                <div class="box_text">
-                    <p><b>Отлаженная и надежная система работы</b></p>
-                    <p>За счет большого опыта</p>
+
+                <div class="box" id="seventh-box">
+                    <img src="{% static 'images/cranes.png' %}" alt="кран">
+                    <div class="box_text">
+                        <h1>Формирование отдельных партий в разные города Украины</h1>
+                        <p>Осуществляется на нашем складе в Одессе</p>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="box" id="seventh-box">
-                <img src="{% static 'images/cranes.png' %}" alt="кран">
-                <div class="box_text">
-                    <p><b>Формирование отдельных партий в разные города Украины</b></p>
-                    <p>Осуществляется на нашем складе в Одессе</p>
-                </div>
-            </div>
-            
-            <div class="box left" id="eigth-box">
-                <img src="{% static 'images/hourglass.png' %}" alt="песочные часы">
-                <div class="box_text">
-                    <p><b>Сроки 35-60 дней</b></p>
-                    <p>Стабильная доставка морем</p>
+
+                <div class="box left" id="eigth-box">
+                    <img src="{% static 'images/hourglass.png' %}" alt="песочные часы">
+                    <div class="box_text">
+                        <h1>Сроки 35-60 дней</h1>
+                        <p>Стабильная доставка морем</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -158,7 +158,7 @@
                 </div>
             </div>
         </div>
-        <div class="question_footer">
+        <div class="question_footer" id="good-price">
             <p>Отличные цены:</p>
         </div>
 		<div class="prices_table-container">
@@ -195,10 +195,10 @@
                      <td> <span>1</span> </td> <td>Введите вес груза</td> <td><input id="kg" onchange="calculator()" type="text" value="300000"/> <span>кг.</span> </td>
                  </tr>
                  <tr>
-                     <td> <span>2</span>  </td> <td>Введите объем груза</td> <td><input id="volume" onchange="calculator()" type="text" value="300000"/><span>м</span> <span class="litle">3</span> </td>
+                     <td> <span>2</span>  </td> <td>Введите объем груза</td> <td><input id="volume" onchange="calculator()" type="text" value="300000"/> <span>м</span> <span class="litle">3</span> </td>
                  </tr>
                  <tr>
-                     <td>  <span>3</span> </td> <td>Получите цену перевозки включая растаможку</td> <td><input id="result" type="text"></input></td>
+                     <td>  <span>3</span> </td> <td>Получите цену перевозки включая растаможку</td> <td><input id="result" type="text"></td>
                  </tr>
                  </tbody>
              </table>
